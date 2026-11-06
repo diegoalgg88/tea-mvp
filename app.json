@@ -31,7 +31,26 @@
     },
     "plugins": [
       "expo-router",
-      "./plugins/withCrisisWidget"
+      "./plugins/withCrisisWidget",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "android": [
+              {
+                "languageCode": "pt",
+                "languageName": "Português",
+                "languageTag": "pt-BR"
+              },
+              {
+                "languageCode": "es",
+                "languageName": "Español",
+                "languageTag": "es-MX"
+              }
+            ]
+          }
+        }
+      ]
     ],
     "extra": {
       "router": {
